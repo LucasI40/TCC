@@ -1,0 +1,487 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+header{
+    min-height: 100px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    z-index: 1000;
+    background: #e6d92be5;
+}
+.header-container{
+    min-height: 100px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav-bar-logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100px;
+    width: 200px;
+    margin-left: 5px;
+}
+.nav-bar-logo a{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-bar-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.nav-bar-models{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100px;
+    width: 600px;
+    gap: 1rem;
+}
+.nav-bar-models ul{
+    height: 100px;
+    width: auto;
+    padding: 0px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.nav-bar-models ul li{
+    list-style: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-bar-models ul li a{
+    text-decoration: none;
+    color: #471C01;
+}
+.nav-bar-models ul li a:hover{
+    color: rgb(0, 0, 0);
+    transition: color 0.3s;
+    text-decoration: underline;
+}
+@media (max-width: 500px){
+
+}
+/* ########## Image Section ##########*/
+.image-container h1{
+    top: 20%;
+    position: absolute;
+    left: 10%;
+    font-family: 'Arial', sans-serif;
+    font-size: 50px;
+    color: rgb(230, 231, 232);
+    z-index: 10;
+    padding-bottom: 10px;
+}
+.image-container h1::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px; 
+    height: 6px;
+    background-color: rgb(230, 231, 232);
+}
+.image-container p{
+    top: 45%;
+    position: absolute;
+    left: 10%;
+    font-family: 'Arial', sans-serif;
+    font-size: 25px;
+    color: rgb(230, 231, 232);
+    z-index: 10;
+}
+.image-container{
+    top: 100px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+.image-container img{
+    left: 0;
+    top: 100px;
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    opacity: 0.9;
+    filter: brightness(40%);
+    object-fit: cover;
+}
+/* ########## Rooms Section ##########*/
+.rooms{
+    position: relative;
+    width: 100%;
+    min-height: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border-bottom: rgb(0, 0, 0) 3px solid;
+    border-top: rgb(0, 0, 0) 3px solid;
+    background-color: #ffffffe5;
+}
+.rooms h2{
+    position: relative;
+    width: 80%;
+    text-align: start;
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    color: #000000;
+    box-sizing: border-box;
+    margin: 0px;
+    margin-top: 40px;
+    padding-left: 30px;
+    padding-top: 10px;
+    background-color: rgb(241, 241, 231)
+}
+.rooms h2::after{
+    margin-left: 30px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px; 
+    height: 4px;
+    background-color: #000000;
+}
+.rooms-container{
+    height: 900px;
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    background-color: rgb(241, 241, 231);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+.rooms-card{
+    position: relative;
+    width: 450px;
+    height: 420px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.rooms-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.rooms-card a{
+    text-decoration: none;
+    width: 450px;
+    height: 420px;  
+}
+.rooms-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+.rooms-card h3{
+    align-items: center;
+    justify-content: center;
+    display: flex;  
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    color:  rgb(255, 255, 255);
+    background-color:#471C01;
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+    margin: 0px;
+    z-index: 2;
+}
+.rooms-card p{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100% - 45px); 
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    z-index: 1;
+}
+.rooms-card:hover p{
+    color: rgb(230, 231, 232);
+    z-index: 10;
+    opacity: 1;
+}
+@media (max-width: 500px){
+
+}
+/* ########## Comunidade Section ##########*/
+.comunidade{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6d92be5;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+.comunidade-container{
+    width: 80%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comunidade-l{
+    width: 50%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+}
+.comunidade-l h2{
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #471C01;
+    padding-bottom: 10px;
+}
+.comunidade-l h2::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px; 
+    height: 4px;
+    background-color: #471C01;
+}
+.comunidade-l p{
+    width: 500px;
+    font-family: 'Arial', sans-serif;
+    text-align: end;
+    font-size: 24px;
+    color: #471C01;
+}
+.comunidade-button{
+    font-family: 'Arial', sans-serif;
+    margin-right: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #471C01;
+    background-color: #e6d92be5;
+    border: 2px solid #471C01;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.comunidade-button:hover{
+    background-color: #471C01;
+    color: #e6d92be5;
+    transition: background-color 0.3s ease;
+}
+.comunidade-r{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comunidade-r img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+}
+/* ########## footer Section ##########*/
+.footer{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.footer-container{
+    height: 400px;
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    flex-wrap: wrap;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+.footer-container img{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    filter: brightness(0.8);
+    z-index: 1;
+}
+.footer-Empresa{
+    display: flex;
+    justify-items: center;
+    align-items: start;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    z-index: 2;
+}
+.footer-Empresa h2{
+    font-family: 'Arial', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #e6d92be5;
+    margin-top: 30px;
+    margin-bottom: 17px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid  #e6d92be5;;
+}
+.footer-Empresa ul{
+    padding: 0px;
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+.footer-Empresa ul li a{
+    text-decoration: dashed;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #e6d92be5;
+}
+.footer-Recursos{
+    display: flex;
+    justify-items: center;
+    align-items: start;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    z-index: 2;
+}
+.footer-Recursos h2{
+    font-family: 'Arial', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #e6d92be5;
+    margin-top: 30px;
+    margin-bottom: 17px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid  #e6d92be5;;
+}
+.footer-Recursos ul{
+    padding: 0px;
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+.footer-Recursos ul li a{
+    text-decoration: dashed;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #e6d92be5;
+}
+.footer-Politicas{
+    display: flex;
+    justify-items: center;
+    align-items: start;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    z-index: 2;
+}
+.footer-Politicas h2{
+    font-family: 'Arial', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #e6d92be5;
+    margin-top: 30px;
+    margin-bottom: 17px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid  #e6d92be5;;
+}
+.footer-Politicas ul{
+    padding: 0px;
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+.footer-Politicas ul li a{
+    text-decoration: dashed;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #e6d92be5;
+}

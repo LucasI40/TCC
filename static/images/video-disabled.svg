@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="21.344351mm"
+   height="21.344351mm"
+   viewBox="0 0 21.344351 21.344351"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-87.44913,-48.94703)">
+    <g
+       id="g16"
+       transform="translate(32.065726,2.2072616)">
+      <g
+         id="g14"
+         transform="translate(34.402786,-2.2072616)">
+        <circle
+           style="fill:#e0e0e0;fill-opacity:1;stroke:#6a1b9a;stroke-width:1;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+           id="circle13"
+           cx="31.652794"
+           cy="59.619205"
+           r="10.172175" />
+        <path
+           id="path13"
+           style="fill:#e0e0e0;fill-opacity:1;stroke:#6a1b9a;stroke-width:0.75;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+           d="m 28.250718,55.705075 c -1.084169,0 -1.957068,0.872899 -1.957068,1.957068 v 3.914137 c 0,1.084169 0.872899,1.957068 1.957068,1.957068 h 3.914137 c 1.084169,0 1.956664,-0.872899 1.956664,-1.957068 v -0.04085 c 0.99154,0.56267 1.998072,0.962426 2.322754,0.781533 0.706219,-0.393463 0.775976,-4.974146 0.08212,-5.389017 -0.325297,-0.194502 -1.37737,0.192451 -2.404872,0.741485 v -0.0073 c 0,-1.084169 -0.872495,-1.957068 -1.956664,-1.957068 z" />
+      </g>
+      <g
+         id="g12-2"
+         transform="rotate(-45,102.08709,76.637208)">
+        <path
+           style="fill:#e0e0e0;fill-opacity:1;stroke:#6a1b9a;stroke-width:0.75;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+           d="m 89.828279,31.099334 c 0,4.310287 0,8.620577 0,12.930867"
+           id="path9-8" />
+        <path
+           style="fill:#e0e0e0;fill-opacity:1;stroke:#e0e0e0;stroke-width:0.75;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+           d="m 89.828279,31.099334 c 0,4.310287 0,8.620577 0,12.930867"
+           id="path10-9"
+           transform="translate(0.75)" />
+      </g>
+    </g>
+  </g>
+</svg>

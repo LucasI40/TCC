@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+	<h1>RBCML</h1>
+	<hr>
+	<a href="/createRole" style="float: right;">Create role</a>
+	<h2>Login</h2>
+	<form action="/login" method="post">
+		<label><strong>Username</strong>
+			<input type="text" name="username" placeholder="username">
+		</label>
+		<label> <strong>Roles</strong>
+			<select name="option">
+				{% for role in roles %}
+					<option value="{{ role }}"> {{ role }} </option>
+				{% endfor %}
+			</select>
+		</label>
+		<button type="submit">Login</button>
+	</form>
+</body>
+</html>

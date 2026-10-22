@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeRBCML</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/log_sing.css') }}">
+</head>
+
+<body>
+    <header>
+        <span class="header-container">
+
+        <div class="nav-bar-logo">
+            <a href="home.html">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo">
+            </a>
+        </div>
+
+        <div class="nav-bar-models">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#comunidade">Comunidade</a></li>
+                <li><a href="#suporte">Suporte</a></li>
+                <li class="login" id="openPop"><a href="#">Login</a></li>
+            </ul>
+        </div>
+
+        </span>
+    </header>
+
+    <div class="login-popup" id="popUp">
+    </div>
+
+    <section class="image-container" id="home">
+        <h1>Bate-papo em grupo<br>Para todas as suas<br>necessidades</h1>
+        <p>
+            Crie seu proprio modelo de sala.<br>
+            Edite a sala da maneira que quiser.<br>
+            Compartilhe a sala com o seu time.<br>
+            E muito mais!
+        </p>
+        <img src="{{ url_for('static', filename='images/roomsback.png') }}" alt="image">
+    </section>
+
+    <section class="rooms" id="rooms">
+        <h2>Modelos de salas</h2>
+        <div class="rooms-container" id="rooms-container-id"> </div>
+    </section>
+
+    <section class="comunidade" id="comunidade">
+        <div class="comunidade-container">
+            <div class="comunidade-l">
+                <h2>Faça parte da nossa comunidade</h2>
+                <p>
+                    Entre nos nossos canais de comunicação e faça parte da nossa comunidade.<br><br>
+                    Compartilhe suas ideias e suas criações.<br><br>
+                    Ajude a nossa equipe a melhorar o produto.        
+                </p>
+                <button class="comunidade-button">Saiba mais</button>
+            </div>
+            <div class="comunidade-r">
+                <img src="{{ url_for('static', filename='images/up.png') }}" alt="joinha">
+            </div>
+        </div>
+        
+    
+    </section>
+
+
+    <section class="footer" id="suporte">
+        <div class="footer-container">  
+            <img src="{{ url_for('static', filename='images/footer.png') }}" alt="footer">
+        <div class = "footer-Empresa">
+            <h2>Empresa</h2>
+            <ul>
+                <li><a href="#home">Sobre</a></li>
+                <li><a href="#servicos">Empregos</a></li>
+                <li><a href="#sobre">Marca</a></li>
+                <li><a href="#clientes">Notícias</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+        <div class = "footer-Recursos">
+            <h2>Recursos</h2>
+            <ul>
+                <li><a href="#servicos">Suporte</a></li>
+                <li><a href="#servicos">Proteção</a></li>
+                <li><a href="#servicos">Blog</a></li>
+                <li><a href="#servicos">Comunidade</a></li>
+                <li><a href="#servicos">Missão</a></li>
+                <li><a href="#servicos">Criadores</a></li>
+            </ul>
+        </div>
+        <div class = "footer-Politicas">
+            <h2>Políticas</h2>
+            <ul>
+                <li><a href="#servicos">Termos</a></li>
+                <li><a href="#servicos">Privacidade</a></li>
+                <li><a href="#servicos">Configurações de cookies</a></li>
+                <li><a href="#servicos">Diretrizes</a></li>
+                <li><a href="#servicos">Reconhecimentos</a></li>
+                <li><a href="#servicos">Licenças</a></li>
+                <li><a href="#servicos">Informações da empresa</a></li>
+            </ul>
+        </div>
+        </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='scripts/log_sing.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/start_call.js') }}"></script>
+</body>
+
+</html>

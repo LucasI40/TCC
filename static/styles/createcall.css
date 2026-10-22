@@ -1,0 +1,256 @@
+a {
+    text-decoration: none;
+}
+
+/* ── Join form ──────────────────────────────────────────────────────────────── */
+.join-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 1rem 0.5rem;
+}
+
+.join-form__title {
+    font-size: 1.6rem;
+    color: #471C01;
+    margin: 0;
+}
+
+.join-form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: min(420px, 90vw);
+}
+
+.join-form__field label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.join-form__field input {
+    padding: 0.7rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.join-form__field input:focus {
+    border-color: #471C01;
+}
+
+/* ── Role card selected state ───────────────────────────────────────────────── */
+.role-card {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.role-card--selected {
+    border-color: #471C01 !important;
+    box-shadow: 0 0 0 3px rgba(71, 28, 1, 0.25) !important;
+    background: #fff8f0 !important;
+}
+
+.role-card--selected .role-header h3 {
+    color: #471C01;
+}
+.Role-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+.roles-card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.RoleType {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e6d92be5;
+    width: 22rem;
+    height: 10rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.Role-name {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.Role-name h2 {
+    color:  #471C01;
+    font-size: 1.5rem;
+    margin: 0;
+}
+.email-input-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.email-input-container input[type="email"] {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.circular-button {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+.circular-button:hover {
+    background-color: #0056b3;
+}
+.circular-button span {
+    font-size: 1.2rem;
+}
+
+.iniciar-session{
+    height: 40px;
+    width: 200px;
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #471C01;;
+    border-radius: 20px;
+    padding: 0;
+}
+.iniciar-session:hover{
+    background-color: #000000;
+}
+.iniciar-session:hover h1{
+    color: #e6d92be5;
+}
+.iniciar-session-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.iniciar-session-button h1{
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+}
+
+
+/* Estilos para formulário de criar sessão */
+.session-form-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.session-form-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.session-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.session-form-container label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+
+.session-form-container input[type="text"],
+.session-form-container input[type="datetime-local"],
+.session-form-container input[type="file"],
+.session-form-container textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.session-form-container button[type="submit"] {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: linear-gradient(300deg, #f9fab7, #fdffc9, #feffb1);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.session-form-container button[type="submit"]:hover {
+    background: linear-gradient(300deg, #f0eb98, #faf9af, #f5f68e);
+    transform: translateY(-2px);
+}
+
+/* Estilos para role cards */
+.role-card {
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    min-width: 250px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.role-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.role-header h3 {
+    color: #333;
+    margin: 0 0 15px 0;
+    font-size: 20px;
+    border-bottom: 2px solid #f9fab7;
+    padding-bottom: 10px;
+}
+
+.role-capabilities p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.role-capabilities p strong {
+    color: #333;
+}

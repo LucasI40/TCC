@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>HomeRBCML</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='styles/createModel.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='styles/home.css') }}">
+   </head>
+   <body>
+    <header>
+        <span class="header-container">
+
+        <div class="nav-bar-logo">
+            <a href="{{ url_for('home') }}">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo">
+            </a>
+        </div>
+
+        <div class="nav-bar-models">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#comunidade">Comunidade</a></li>
+                <li><a href="#suporte">Suporte</a></li>
+            </ul>
+        </div>
+
+        </span>
+    </header>
+
+    <section class="nR-title">
+        <h1>Crie seu proprio Room</h1>
+        <p>Nos envie um modelo de sala para criar o seu Room.</p>
+    </section>
+    
+
+    <section class="nR-description">
+        <div class="nR-description-container">
+            <div class="nR-description-l">
+                <h2>Como criar um Room?</h2>
+                <p>Para criar um Room, você precisa enviar um modelo de sala.<br>
+                O modelo de sala é um arquivo JSON que contém as informações da sala.<br><br>
+
+                O arquivo JSON deve seguir o seguinte padrão:<br><br>
+            </p>
+            <p class="json-example">
+                {<br>
+                    "name": "Nome da sala",<br>
+                    "description": "Descrição da sala",<br>
+                    "imagem":{<br>
+                        "src": "Imagem da sala",<br>
+                        "alt": "Alt da imagem"<br>
+                    },<br>
+                    "roles":{<br>
+                        "role1":[ "capacidade1", "capacidade2", ..., "capacidadeN" ],<br>
+                        "role2":[ "capacidade1", "capacidade2", ..., "capacidadeN" ],<br>
+                        ...<br>
+                        "roleN":[ "capacidade1", "capacidade2", ..., "capacidadeN" ],<br>
+                    } <br>
+                }<br><br>
+            </p>
+            <p>
+                O campo "roles" é opcional. Se não for informado, o Room será criado sem roles.<br>
+                As capacidades são as seguintes:  'send_video', 'recv_video', 'send_audio',<br> 'recv_audio', 'send_string', 'recv_string'
+            </p>
+            <a href="{{ url_for('howtojson') }}">Como criar um arquivo JSON?</a>
+            </div>
+            <div class="nR-description-r">
+                <img src="{{ url_for('static', filename='images/learn.png') }}" alt="nR-description-r">
+            </div>
+        </div>
+    </section>
+
+    <section class="nR-form">
+        <form action="/createModel" method="POST" enctype="multipart/form-data"> 
+                <label for="jsonFile">Insira o modelo:</label><br>
+                <input type="file" id="jsonModel" name="jsonModel" accept=".json" required>
+                <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+    <section class="footer" id="suporte">
+        <div class="footer-container">  
+            <img src="{{ url_for('static', filename='images/footer.png') }}" alt="footer">
+        <div class = "footer-Empresa">
+            <h2>Empresa</h2>
+            <ul>
+                <li><a href="#home">Sobre</a></li>
+                <li><a href="#servicos">Empregos</a></li>
+                <li><a href="#sobre">Marca</a></li>
+                <li><a href="#clientes">Notícias</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+        <div class = "footer-Recursos">
+            <h2>Recursos</h2>
+            <ul>
+                <li><a href="#servicos">Suporte</a></li>
+                <li><a href="#servicos">Proteção</a></li>
+                <li><a href="#servicos">Blog</a></li>
+                <li><a href="#servicos">Comunidade</a></li>
+                <li><a href="#servicos">Missão</a></li>
+                <li><a href="#servicos">Criadores</a></li>
+            </ul>
+        </div>
+        <div class = "footer-Politicas">
+            <h2>Políticas</h2>
+            <ul>
+                <li><a href="#servicos">Termos</a></li>
+                <li><a href="#servicos">Privacidade</a></li>
+                <li><a href="#servicos">Configurações de cookies</a></li>
+                <li><a href="#servicos">Diretrizes</a></li>
+                <li><a href="#servicos">Reconhecimentos</a></li>
+                <li><a href="#servicos">Licenças</a></li>
+                <li><a href="#servicos">Informações da empresa</a></li>
+            </ul>
+        </div>
+        </div>
+     </section>
+    </body>
+</html>

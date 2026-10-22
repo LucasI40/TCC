@@ -1,0 +1,46 @@
+@import 'colors.css';
+
+/* Page Background */
+body {
+    background-color: var(--purple-vibrant);
+    color: var(--purple-deep);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.section {
+    background-color: var(--purple-soft);
+    padding: 10px;
+    margin: 5px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.panel {
+    width: 15%;
+
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.videos {
+    width: 60%;
+
+    border-left: 2px solid var(--purple-vibrant);
+    border-right: 2px solid var(--purple-vibrant);
+}
+
+.chat {
+    width: 25%;
+}

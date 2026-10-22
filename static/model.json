@@ -1,0 +1,126 @@
+[   
+    {
+        "name": "Crie um Room",
+        "description": "Crie seu proprio Room.",
+        "imagem":{
+            "src": "images/plus.png",
+            "alt": "Plus"
+        }
+    },
+    {
+        "name": "Sala de Aula",
+        "description": "Classroom",
+        "imagem": {"src": "images/SalaDeAula.jpg"},
+        "roles": {
+            "Professor": {
+                "send_video": true,
+                "recv_video": true,
+                "send_audio": true,
+                "recv_audio": true,
+                "send_string": true,
+                "recv_string": true
+            },
+            "Aluno": {
+                "send_video": false,
+                "recv_video": true,
+                "send_audio": true,
+                "recv_audio": true,
+                "send_string": true,
+                "recv_string": true
+            }     
+        }
+    },
+    {
+        "name": "Video chamada",
+        "description": "Video chamada",
+        "imagem": {"src": "images/video.png"},
+        "roles": {
+            "Participante": {
+                "send_video": true,
+                "recv_video": true,
+                "send_audio": true,
+                "recv_audio": true,
+                "send_string": true,
+                "recv_string": true
+            }
+        }
+    },
+    {
+        "name": "Tribunal",
+        "description": "Tribunal",
+        "imagem": {"src": "images/tribunal.jpg"},
+        "roles": {
+            "Juiz": {
+                "send_video": true,
+                "recv_video": true,
+                "send_audio": true,
+                "recv_audio": true,
+                "send_string": true,
+                "recv_string": true
+            },
+            "Jurados": {
+                "send_video": false,
+                "recv_video": true,
+                "send_audio": false,
+                "recv_audio": true,
+                "send_string": false,
+                "recv_string": true
+            },
+            "Promotor de justiça": {
+                "send_video": true,
+                "recv_video": true,
+                "send_audio": true,
+                "recv_audio": true,
+                "send_string": true,
+                "recv_string": true
+            },
+            "Advogado de Defesa": {
+                "send_video": true,
+                "recv_video": true,
+                "send_audio": true,
+                "recv_audio": true,
+                "send_string": true,
+                "recv_string": true
+            }, 
+            "Réu(s)": {
+                "send_video": true,
+                "recv_video": true,
+                "send_audio": true,
+                "recv_audio": true,
+                "send_string": true,
+                "recv_string": true
+            },
+            "Testemunha(s)": {
+                "send_video": false,
+                "recv_video": true,
+                "send_audio": true,
+                "recv_audio": true,
+                "send_string": true,
+                "recv_string": true
+            }
+        }
+    },
+    {
+        "name": "Auditório",
+        "description": "Auditório",
+        "imagem": {"src": "images/auditorio.jpg"},
+        "roles": {
+            "Palestrante": {
+                "send_video": true,
+                "recv_video": false,
+                "send_audio": true,
+                "recv_audio": true,
+                "send_string": true,
+                "recv_string": true
+            },
+            "Participante": {
+                "send_video": false,
+                "recv_video": true,
+                "send_audio": true,
+                "recv_audio": true,
+                "send_string": true,
+                "recv_string": true
+            }        
+        }
+    }
+]

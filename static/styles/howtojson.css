@@ -1,0 +1,85 @@
+/* ########## Title Section ##########*/
+.jsontutorial-title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    background-color: #471C01;
+}
+.jsontutorial-title h1{
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+}
+/* ########## Tutorial Section ##########*/
+.jsontutorial{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+    width: 100%;
+    background-color: #e6d92be5;
+}
+.jsontutorial-description-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 500px;
+}
+.jsontutorial-description-container h1{
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #471C01;
+    text-align: start;
+}
+.jsontutorial-description-container h2{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #471C01;
+    text-align: start;
+}
+.jsontutorial-description-container h3{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #471C01;
+    text-align: start;
+}
+.jsontutorial-description-container p{
+    font-size: 18px;
+    color: #471C01;
+    text-align: start;
+    margin-left: 35px;
+}
+.jsontutorial-description-container ul{
+    padding: 0px;
+    margin-left: 50px;
+    font-size: 18px;
+    color: #471C01;
+    text-align: start;
+}
+.jsontutorial-description-container ul li{
+    text-align: start;
+}
+.jsontutorial-description-container a{
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px;
+    color: #007bff;
+    cursor: pointer;
+    display: inline-block;
+}
+.jsontutorial-description-container a:hover{
+    text-decoration: underline;
+    color: #0056b3;
+}

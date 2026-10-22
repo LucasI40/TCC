@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create role</title>
+</head>
+<body>
+    <h2>Escolha suas opções:</h2>
+    <form action="/createRole" method="post">
+        <label>Name:
+                <input type="text" name="roleName" placeholder="Role Name">
+        </label>
+        <br>
+        <h3>Vídeo</h3>
+        <input type="checkbox" name="sendVideo" value="T">Send<br>
+        <input type="checkbox" name="receiveVideo" value="T"> Receive<br>
+        <h3>Áudio</h3>
+        <input type="checkbox" name="sendAudio" value="T">Send<br>
+        <input type="checkbox" name="receiveAudio" value="T">Receive<br>
+        <h3>String</h3>
+        <input type="checkbox" name="sendString" value="T"> Send<br>
+        <input type="checkbox" name="receiveString" value="T"> Receive<br>
+	<br>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>

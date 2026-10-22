@@ -1,0 +1,137 @@
+/* ########## Title Section ##########*/
+.nR-title{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    background-color: #471C01;
+}
+.nR-title h1{
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.nR-title p{
+    font-size: 18px;
+    color: #ffffff;
+}
+/* ########## Description Section ##########*/
+.nR-description{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 700px;
+    width: 100%;
+    background-color: #e6d92be5;
+}
+.nR-description-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+}
+.nR-description-l{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 50%;
+}
+.nR-description-l h2{
+    font-size: 28px;
+    font-weight: bold;
+    color:  #471C01;
+}
+.nR-description-l p{
+    text-align: end;
+    font-size: 18px;
+    color: #471C01;
+    margin: 10px;
+}
+.nR-description-l .json-example{
+    font-size: 18px;
+    color: #471C01;
+    text-align: start;
+    margin: 0px;
+}
+.nR-description-r{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nR-description-r img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+.nR-description-l a{
+    margin: 10px;
+    font-size: 18px;
+    text-align: start;
+    text-decoration: none;
+}
+.nR-description-l a:hover{
+    text-decoration: underline;
+}
+/* ########## Form Section ##########*/
+.nR-form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    background-color: #ffffffe5;
+}
+.nR-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #e6d92be5;
+}
+.nR-form form label{
+    font-size: 24px;
+    font-weight: bold;
+    color: #471C01;
+}
+.nR-form form input[type="file"]{
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #471C01;
+    margin: 20px;
+}
+.nR-form form input[type="file"]::file-selector-button{ 
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.nR-form form button{
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #471C01;
+    background-color: #471C01;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;  
+}
+.nR-form form button:hover{
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+

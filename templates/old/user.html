@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ user }}
+{% endblock %}
+
+{% block content %}
+<h1>{{ user }}</h1>
+<h3>Session 1 </h3>
+<button onclick='enter("{{ user }}", 1)'>Enter</button>
+<hr>
+<h4>Session 2</h4>
+<button disabled>Enter</button>
+<hr>
+<h4>Session 3</h4>
+<button disabled>Enter</button>
+
+<script>
+    function enter(user, session) {
+        window.location.href = `/user/${user}/session/${session}`
+    }
+</script>
+{% endblock %}

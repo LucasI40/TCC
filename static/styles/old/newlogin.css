@@ -1,0 +1,78 @@
+body{
+    background: linear-gradient(300deg, #ffffff, #fdfff3, #fdffe7);
+}
+p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.cadastro-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    
+}
+.Lside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 65%;
+    background: linear-gradient(300deg, #e47922, #c0491a, #833704);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.Rside{
+    width: 30%;
+    height: 65%;
+    background: linear-gradient(300deg, #7bf770, #2acf14, #2a7c03);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 80%;
+    background-color:  #87f38d;
+    border-radius: 15px;
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+}
+.email{
+    width: 45%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    border-radius: 15px;
+    margin-right: 55px;
+}
+.password{
+    width: 45%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    border-radius: 15px;
+    margin-right: 55px;
+}   
+.singup-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.login-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #87f38d;
+}

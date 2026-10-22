@@ -1,0 +1,16 @@
+:root {
+    /* Yellow Palette */
+    --yellow-bright: #FFC300;
+    --yellow-warm: #FFD60A;
+    --yellow-pastel: #FFF5CC;
+
+    /* Purple Palette */
+    --purple-deep: #0F1112;
+    --purple-vibrant: #FFFFFF;
+    --purple-soft: #76A0AC;
+
+    /* Neutral Colors */
+    --gray-dark: #4A4A4A;
+    --gray-light: #E0E0E0;
+    --white: #FFFFFF;
+}

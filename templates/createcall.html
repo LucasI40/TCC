@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Iniciar Sessão</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='styles/createcall.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='styles/home.css') }}">
+   </head>
+   <body>
+      <header>
+         <span class="header-container">
+
+         <div class="nav-bar-logo">
+             <a href="{{ url_for('path.home') }}">
+                 <img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo">
+             </a>
+         </div>
+
+         <div class="nav-bar-models">
+             <ul>
+                 <li><a href="{{ url_for('path.home') }}">Home</a></li>
+                 <li><a href="{{ url_for('path.home') }}#rooms">Rooms</a></li>
+             </ul>
+         </div>
+         </span>
+     </header>
+
+    <!-- Title showing which room type was selected -->
+    <section class="Role-container">
+
+      <div class="join-form">
+
+        <h2 id="type-label" class="join-form__title"></h2>
+
+        <!-- Username -->
+        <div class="join-form__field">
+          <label for="input-username">Seu nome</label>
+          <input
+            type="text"
+            id="input-username"
+            placeholder="Como quer ser chamado?"
+            maxlength="32"
+            required
+          >
+        </div>
+
+        <!-- Room ID -->
+        <div class="join-form__field">
+          <label for="input-room-id">ID da sala</label>
+          <input
+            type="text"
+            id="input-room-id"
+            placeholder="Ex: ABC123"
+            maxlength="24"
+            required
+          >
+        </div>
+
+      </div>
+
+      <!-- Role cards populated by roles.js -->
+      <div class="roles-card" id="roles-card-container"></div>
+
+      <!-- Iniciar Sessão -->
+      <button class="iniciar-session" id="btn-iniciar">
+          <span class="iniciar-session-button">
+              <h1>Iniciar Sessão</h1>
+          </span>
+      </button>
+
+    </section>
+
+    <script src="{{ url_for('static', filename='scripts/roles.js') }}"></script>
+    </body>
+</html>
